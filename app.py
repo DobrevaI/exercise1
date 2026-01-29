@@ -15,7 +15,7 @@ else:
   st.warning("that number is small")
 
 number=st.number_input("What is 5*5?")
-if button("Check"):
+if st.button("Check"):
   if answer==25:
     st.success("That is correct")
   else:
