@@ -10,7 +10,13 @@ else:
 
 num=st.number_input("Please put a number... any number...")
 if num>10:
-  st.write("That number is big")
+  st.success("That number is big")
 else:
-  st.write("that number is small")
+  st.warning("that number is small")
 
+number=st.number_input("What is 5*5?")
+if button("Check"):
+  if answer==25:
+    st.success("That is correct")
+  else:
+    st.error("Ohhhh that would be incorrect")
