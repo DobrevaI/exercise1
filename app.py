@@ -8,7 +8,7 @@ elif ans=="no" or ans=="nah" or ans=="nope":
 else:
   st.warning("I don't know what you said")
 
-num=st.number_imput("Please put a number... any number...")
+num=st.number_input("Please put a number... any number...")
 if num>10:
   st.write("That number is big")
 else:
