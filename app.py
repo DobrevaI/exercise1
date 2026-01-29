@@ -10,7 +10,7 @@ else:
 
 num=st.number_input("Please put a number... any number...")
 if num==10:
-  st.success("That number is big")
+  st.success("That number is perfect")
 elif num>10:
   st.error("that number is too big")
 else:
