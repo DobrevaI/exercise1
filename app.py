@@ -4,15 +4,17 @@ ans=st.text_input("Do you like Python?")
 if ans=="yes" or ans=="yeah" or ans=="yep":
   st.success("Amazing! :D")
 elif ans=="no" or ans=="nah" or ans=="nope":
-  st.warning("You will like it! >:(")
+  st.error("You will like it! >:(")
 else:
-  st.warning("I don't know what you said")
+  st.error("I don't know what you said")
 
 num=st.number_input("Please put a number... any number...")
-if num>10:
+if num==10:
   st.success("That number is big")
+elif num>10:
+  st.error("that number is too big")
 else:
-  st.warning("that number is small")
+  st.warning("that number is too small")
 
 number=st.number_input("What is 5*5?")
 if st.button("Check"):
